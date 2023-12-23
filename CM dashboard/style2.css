@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+:root {
+    --totaltask: #08D9D6;
+    --totalcompleted: #65B741;
+    --taskinitiated: #279EFF;
+    --bad: #F94C10;
+    --better: #FFB84C;
+    --more: #35A29F;
+    --good: #16FF00;
+}
+
+
+
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+.card {
+    margin: 20px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.side-image img {
+    width: 100%;
+
+}
+
+.my-table {
+    height: 450px;
+    overflow-y: auto;
+
+}
+
+
+
+.my-table tr {
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+}
+
+.my-table h4 {
+    text-align: left;
+    padding: 5px;
+}
+
+.my-table table tbody tr {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    align-items: end;
+}
+
+
+.my-table table tbody tr td h4 {
+    font-size: 18px;
+    /*line-height: 36px;*/
+    color: #B1B0BF;
+    padding-bottom: 8px;
+    padding-top: 16px;
+    font-family: 'Helvetica-bold';
+
+}
+
+.my-table p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 10px 0 10px;
+
+}
+
+.my-table .more {
+    color: var(--more);
+}
+
+.my-table .bad {
+    color: var(--bad);
+}
+
+.my-table .good {
+    color: var(--good);
+}
+
+.my-table .totaltask {
+    color: var(--totaltask);
+}
+
+.my-table .totalcompleted {
+    color: var(--totalcompleted);
+
+}
+
+
+.my-table .taskinitiated {
+    color: var(--taskinitiated);
+}
